@@ -13,7 +13,6 @@ const port = process.env.PORT;
 app.use(express.json());
 app.use(morgan("dev"));
 
-// Configuring Cors
 app.use(
   cors({
     origin: "*",
@@ -24,8 +23,6 @@ app.use(
 
 
 
-
-// Starting server
 app.listen(port, () => {
   console.log(`Server started at port ${port}`);
 });
